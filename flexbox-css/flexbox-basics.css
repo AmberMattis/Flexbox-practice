@@ -11,7 +11,7 @@ html body {                                         /*setup*/
 
 .box {
     color:white;                                    /*setup*/
-    font-size: 100px;                               /*setup*/
+    font-size: 20px;                               /*setup*/
     text-align: center;                             /*setup*/
     text-shadow: 4px 4px 0 rgba(0,0,0,0.1);         /*setup*/
     padding: 10px;
@@ -31,16 +31,14 @@ html body {                                         /*setup*/
 
 
 .container {
-    display:flex;                           /* display: flex; initiates flexbox properties and html components will now be displayed in a row.*/
-    min-height: 100vh;                          /* viewport height allows the container to stretch 100% of the height of the browser regardless of size*/
-    border: 10px solid lavender;
-    flex-wrap: wrap;
-
+    border: 10px solid yellow;
+    display: flex; /* display: flex; initiates flexbox properties and html components will now be displayed in a row.*/
+    justify-content:space-between;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .box {
-    width: calc(33.33333333% - 20px);
-    margin: 10px;
 }
 
 
