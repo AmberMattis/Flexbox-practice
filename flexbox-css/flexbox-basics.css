@@ -1,29 +1,48 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;                         /*setup*/
 }
 
 
-html body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+html body {                                         /*setup*/
+    width: 100%;                                    /*setup*/
+    height: 100%;                                   /*setup*/
+    margin: 0;                                      /*setup*/
 }
 
 .box {
-    color:white;
-    font-size: 100px;
-    text-align: center;
-    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    color:white;                                    /*setup*/
+    font-size: 100px;                               /*setup*/
+    text-align: center;                             /*setup*/
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);         /*setup*/
     padding: 10px;
 }
 
-.box1 {background:#1abc9c;}
-.box2 {background:#3498db;}
-.box3 {background:#9b59b6;}
-.box4 {background:#34495e;}
-.box5 {background:#f1cf0f;}
-.box6 {background:#e67e22;}
-.box7 {background:#e74c3c;}
-.box8 {background:#bdc3c7;}
-.box9 {background:#2ecc71;}
-.box10 {background:#16a085;}
+.box1 {background:#1abc9c;}                         /*setup*/
+.box2 {background:#3498db;}                         /*setup*/
+.box3 {background:#9b59b6;}                         /*setup*/
+.box4 {background:#34495e;}                         /*setup*/
+.box5 {background:#f1cf0f;}                         /*setup*/
+.box6 {background:#e67e22;}                         /*setup*/
+.box7 {background:#e74c3c;}                         /*setup*/
+.box8 {background:#bdc3c7;}                         /*setup*/
+.box9 {background:#2ecc71;}                         /*setup*/
+.box10 {background:#16a085;}                        /*setup*/
+
+
+
+.container {
+    display:flex;                           /* display: flex; initiates flexbox properties and html components will now be displayed in a row.*/
+    min-height: 100vh;                          /* viewport height allows the container to stretch 100% of the height of the browser regardless of size*/
+    border: 10px solid lavender;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: calc(33.33333333% - 20px);
+    margin: 10px;
+}
+
+
+
+
